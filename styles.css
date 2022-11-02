@@ -1,0 +1,88 @@
+:root {
+  --red: #ea5e5e;
+  --yellow: #f7ba3e;
+  --blue: #56b3b4;
+  --purple: #bf85bf;
+  --background: #1a2b34;
+  --gray: #465862;
+  --unit: 10px;
+  --container-width: 650px;
+}
+
+body {
+  background: var(--background);
+  margin: 0;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.container {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--unit);
+}
+
+.container:hover {
+    border: 1px solid white;
+}
+
+.row {
+  height: var(--unit);
+  display: flex;
+  justify-content: center;
+  gap: var(--unit);
+}
+
+.cell {
+  height: 100%;
+  width: calc(var(--size, 2) * var(--unit));
+  background-color: var(--gray);
+  border-radius: 1000px;
+}
+
+.cell.size-2 {
+  --size: 2;
+}
+
+.cell.size-4 {
+  --size: 4;
+}
+
+.cell.size-6 {
+  --size: 6;
+}
+
+.cell.size-8 {
+  --size: 8;
+}
+
+.cell.size-10 {
+  --size: 10;
+}
+
+.cell.size-12 {
+  --size: 12;
+}
+
+.cell.size-14 {
+    --size: 14;
+}
+
+.cell.size-16 {
+    --size: 16;
+}
+
+.cell.size-18 {
+    --size: 18;
+}
+
+.cell.size-20 {
+    --size: 20;
+}
+  
+
+.cell.blue { background-color: var(--blue);}
+.cell.red { background-color: var(--red);}
+.cell.yellow { background-color: var(--yellow);}
+.cell.purple { background-color: var(--purple);}
